@@ -41,12 +41,12 @@ def gameover(screen: pg.Surface) -> None:
     fonto = pg.font.Font(None, 50)  # 文字列
     txt = fonto.render("GAMEOVER", True, (255, 255, 255))
     screen.blit(txt, [450, 310])
-    kk_img1 = pg.image.load("fig/8.png")  # 画像左
+    kk_img1 = pg.image.load("fig/8.png")  # こうかとんの画像左
     kk_img1 = pg.transform.rotozoom(pg.image.load("fig/8.png"), 0, 0.9)
     kk_rct1 = kk_img1.get_rect()
     kk_rct1.center = 390, 320
     screen.blit(kk_img1, kk_rct1)
-    kk_img2 = pg.image.load("fig/8.png")  # 画像右
+    kk_img2 = pg.image.load("fig/8.png")  # こうかとんの画像右
     kk_img2 = pg.transform.rotozoom(pg.image.load("fig/8.png"), 0, 0.9)
     kk_rct2 = kk_img2.get_rect()
     kk_rct1.center = 710, 320
